@@ -1,0 +1,53 @@
+// --- Breakpoints
+
+$break-tiny: 100px;
+$break-mobile: 400px;
+$break-small: 600px;
+$break-medium: 800px;
+$break-900: 900px;
+$break-large: 1000px;
+$break-xl: 1200px;
+$break-xxl: 1400px;
+$break-xxxl: 1800px;
+
+// --- Fonts
+
+$base-font: inter;
+
+$light: 300;
+$regular: 400;
+$semi-bold: 600;
+$bold: 700;
+$black: 900;
+
+$fs-xs: 0.8em;
+$fs-s: 1.05em;
+$fs-m: 1.1em;
+$fs-l: 1.2em;
+$fs-xl: 1.45em;
+$fs-xxl: 1.8em;
+$fs-h1: 4vw;
+$fs-h1-large: 6vw;
+
+// --- Colours
+$bg-primary: white;
+$bg-accent: #fbeadb;
+
+$text-primary: #540d6e;
+$text-accent: #3b28cc;
+$text-secondary: #4b5464;
+
+$accent-one: #ffd500;
+$accent-two: #9bb1ff;
+$accent-three: #eca400;
+$accent-one-light: mix($accent-one, white, 20%);
+$accent-two-light: mix($accent-two, white, 20%);
+$accent-three-light: mix($accent-three, white, 20%);
+
+$off-white: #f8f8f8;
+$light-grey: #efefef;
+$grey: #e3e3e3;
+$mid-grey: #dddddd;
+$dark-grey: #666666;
+$darker-grey: #454545;
+$off-black: #222222;

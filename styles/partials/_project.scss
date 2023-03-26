@@ -1,0 +1,136 @@
+@include respond-at-and-above(0vw) {
+  body.project {
+    margin: 80px 20vw 0;
+    width: auto;
+    height: auto;
+    display: inline-flex;
+    flex-direction: row;
+    background: $bg-primary;
+    color: $text-primary;
+
+    h3 {
+      margin-top: 40px;
+    }
+
+    section {
+      margin-bottom: 120px;
+      padding: 0 8vw;
+    }
+    section.back {
+      padding: 0;
+      a {
+        text-decoration: none;
+        &:hover {
+          img {
+            transform: scale(1.2);
+          }
+        }
+      }
+      .link-home {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        img {
+          margin: 0;
+          border: none;
+          width: auto;
+          transition: all 0.1s ease-in-out;
+        }
+        h3 {
+          margin: 0;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    section.summary {
+      background-color: $accent-one-light;
+      border: 2px solid $accent-one;
+      border-radius: 20px;
+      box-shadow: 0 16px 0 -8px $accent-one;
+      padding: 1vw 6vw 2vw;
+    }
+
+    img {
+      width: calc(100% + 8vw);
+      margin: 40px -4vw 20px;
+      border: 2px solid $accent-three;
+      border-radius: 12px;
+    }
+
+    .heading {
+      padding: 0 8vw;
+    }
+
+    .project-container {
+      .heading {
+        h1 {
+          margin-bottom: 0;
+        }
+      }
+      .project-elements {
+        .elements {
+          display: flex;
+          text-align: center;
+        }
+      }
+      .process-section {
+        margin: 60px 0;
+      }
+    }
+
+    .section-projects {
+      padding: 0vw;
+      .card-container {
+        padding-top: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        z-index: 1;
+        .card {
+          text-decoration: none;
+          display: grid;
+
+          .card-text {
+            padding: 0px;
+          }
+
+          img {
+            transition: all 0.1s ease-in-out;
+            margin: 0;
+            border: 12px solid $accent-three-light;
+            border-radius: 48px;
+          }
+          &:hover {
+            h3 {
+              text-decoration: none;
+            }
+            img {
+              border: 12px solid $accent-three;
+              border-radius: 72px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-at-and-below($break-small) {
+  body.project {
+    margin: 80px 4vw 0;
+    .card {
+      padding: 0 40px;
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@include respond-at-and-above($break-small) {
+  body.project {
+    .card {
+      grid-template-columns: 55% auto;
+      grid-gap: 4vw;
+    }
+  }
+}
