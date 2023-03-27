@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
 
 @include respond-at-and-above(0vw) {
+  html,
   body {
     font-family: $base-font, Helvetica, Arial, sans-serif;
+    font-size: 16px;
   }
 
   h1 {

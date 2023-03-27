@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap");
 @media (min-width: 0vw) {
+  html,
   body {
     font-family: inter, Helvetica, Arial, sans-serif;
+    font-size: 16px;
   }
   h1 {
     font-family: inter;
