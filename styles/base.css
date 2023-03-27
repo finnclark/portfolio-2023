@@ -75,7 +75,7 @@ body {
     margin-bottom: 160px;
   }
   body.main .primary-container section {
-    max-width: 580px;
+    max-width: 600px;
   }
   body.main .supplementary-container {
     padding: 20px;
@@ -171,10 +171,13 @@ body {
   }
 }
 
-@media only screen and (-webkit-min-device-pixel-ratio: 2.0104166666666665), only screen and (min-resolution: 193dpi) {
+@media (min-width: 1500px) {
   html,
   body {
     font-size: 20px;
+  }
+  .primary-container section {
+    max-width: 700px;
   }
 }
 
