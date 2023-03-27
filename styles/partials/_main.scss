@@ -22,12 +22,17 @@ body {
     }
 
     .primary-container {
+      section {
+        max-width: 580px;
+      }
     }
 
     .supplementary-container {
+      padding: 20px;
       .profile {
+        padding: 20px;
         height: auto;
-        width: calc(100% - 24px);
+        width: calc(100% - 64px);
         position: sticky;
         top: 60px;
         border: 12px solid $accent-two;
@@ -77,118 +82,204 @@ body {
           }
           img {
             border: 12px solid $accent-three;
-            border-radius: 72px;
+            border-radius: 60px;
           }
         }
       }
     }
   }
+}
 
-  hr {
-    border: none;
-    height: 40px;
-    width: 100%;
-    transform: scale(0.4);
-    background-repeat: no-repeat;
-    background-position: center;
-    margin: 40px 0;
-  }
-  hr.hr-one {
-    background-image: url(../assets/images/hr-1.svg);
-  }
-  hr.hr-two {
-    background-image: url(../assets/images/hr-2.svg);
-  }
-  hr.hr-three {
-    background-image: url(../assets/images/hr-3.svg);
-  }
-
-  .blob-one,
-  .blob-two,
-  .blob-three {
-    &:before {
-      content: "";
-      display: block;
-      position: relative;
-      z-index: -1;
-      animation: rotate 8s ease-in-out alternate infinite;
-    }
-    @keyframes rotate {
-      from {
-        transform: scale(1.4) rotate(0deg);
+@include respond-at-and-below($break-medium) {
+  body.main {
+    .supplementary-container {
+      .profile {
+        padding: 4px;
+        border-radius: 24px;
+        width: calc(100% - 8px);
       }
-      to {
-        transform: scale(1) rotate(-45deg);
+    }
+    .section-projects {
+      .card-container {
+        padding-top: 40px;
+        grid-template-columns: 1fr;
+        row-gap: 80px;
+        .card-text {
+          padding: 12px 8px 0;
+        }
+      }
+      .projects-intro {
+        width: calc(100%);
       }
     }
   }
+}
+@include respond-at-and-below($break-small) {
+  body.main {
+    grid-template-columns: 1fr;
+    grid-column-gap: 0;
+    .supplementary-container {
+      display: none;
+    }
+  }
+}
 
-  .blob-one {
-    &:before {
-      top: 120px;
-      left: -6vw;
-      width: 147px;
-      height: 144px;
-      margin-top: -144px;
-      background: url("../assets/images/blob-1.svg") no-repeat;
-    }
-  }
-  .blob-two {
-    &:before {
-      top: 280px;
-      right: -25vw;
-      width: 154px;
-      height: 121px;
-      margin-top: -121px;
-      background: url("../assets/images/blob-2.svg") no-repeat;
-    }
-  }
-  .blob-three {
-    &:before {
-      top: 100px;
-      right: -34vw;
-      width: 158px;
-      height: 133px;
-      margin-top: -133px;
-      background: url("../assets/images/blob-3.svg") no-repeat;
-    }
-  }
+hr {
+  border: none;
+  height: 40px;
+  width: 100%;
+  transform: scale(0.4);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 40px 0;
+}
+hr.hr-one {
+  background-image: url(../assets/images/hr-1.svg);
+}
+hr.hr-two {
+  background-image: url(../assets/images/hr-2.svg);
+}
+hr.hr-three {
+  background-image: url(../assets/images/hr-3.svg);
+}
 
-  .text-shape {
-    position: relative;
-    display: inline-block;
-  }
-  .text-shape::before {
-    position: absolute;
+.blob-one-accent-one,
+.blob-two-accent-one,
+.blob-three-accent-one,
+.blob-one-accent-two,
+.blob-two-accent-two,
+.blob-three-accent-two,
+.blob-one-accent-three,
+.blob-two-accent-three,
+.blob-three-accent-three {
+  &:before {
     content: "";
-    border-radius: 2px;
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin-top: -200px;
     z-index: -1;
+    animation: rotate 8s ease-in-out alternate infinite;
   }
+  @keyframes rotate {
+    from {
+      transform: scale(1.4) rotate(0deg);
+    }
+    to {
+      transform: scale(1) rotate(-45deg);
+    }
+  }
+}
 
-  .shape-one::before {
-    width: 90%;
-    height: 14px;
-    background-color: $accent-one;
-    transform: rotate(1deg);
-    top: 20px;
-    left: 4px;
+// accent 1
+.blob-one-accent-one {
+  &:before {
+    background: url("../assets/images/blob-1-accent-1.svg") no-repeat;
   }
+}
+.blob-two-accent-one {
+  &:before {
+    background: url("../assets/images/blob-2-accent-1.svg") no-repeat;
+  }
+}
+.blob-three-accent-one {
+  &:before {
+    background: url("../assets/images/blob-3-accent-1.svg") no-repeat;
+  }
+}
+// accent 2
+.blob-one-accent-two {
+  &:before {
+    background: url("../assets/images/blob-1-accent-2.svg") no-repeat;
+  }
+}
+.blob-two-accent-two {
+  &:before {
+    background: url("../assets/images/blob-2-accent-2.svg") no-repeat;
+  }
+}
+.blob-three-accent-two {
+  &:before {
+    background: url("../assets/images/blob-3-accent-2.svg") no-repeat;
+  }
+}
+// accent 3
+.blob-one-accent-three {
+  &:before {
+    background: url("../assets/images/blob-1-accent-3.svg") no-repeat;
+  }
+}
+.blob-two-accent-three {
+  &:before {
+    background: url("../assets/images/blob-2-accent-3.svg") no-repeat;
+  }
+}
+.blob-three-accent-three {
+  &:before {
+    background: url("../assets/images/blob-3-accent-3.svg") no-repeat;
+  }
+}
 
-  .shape-two::before {
-    width: 110%;
-    height: 12px;
-    background-color: $accent-two;
-    transform: rotate(-2deg);
-    top: 24px;
-    left: -8px;
+.blob-left-one {
+  &:before {
+    top: 120px;
+    left: -6vw;
   }
+}
+.blob-left-two {
+  &:before {
+    top: 200px;
+    left: -12vw;
+  }
+}
+.blob-right-one {
+  &:before {
+    top: 200px;
+    right: -25vw;
+  }
+}
+.blob-right-two {
+  &:before {
+    top: 100px;
+    right: -34vw;
+  }
+}
 
-  .shape-three::before {
-    width: 100%;
-    height: 11px;
-    background-color: $accent-three;
-    transform: rotate(1deg);
-    top: 25px;
-    left: 4px;
-  }
+.text-shape {
+  position: relative;
+  display: inline-block;
+}
+.text-shape::before {
+  position: absolute;
+  content: "";
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.shape-one::before {
+  width: 90%;
+  height: 14px;
+  background-color: $accent-one;
+  transform: rotate(1deg);
+  top: 22px;
+  left: 4px;
+}
+
+.shape-two::before {
+  width: 110%;
+  height: 12px;
+  background-color: $accent-two;
+  transform: rotate(-2deg);
+  top: 24px;
+  left: -8px;
+}
+
+.shape-three::before {
+  width: 100%;
+  height: 11px;
+  background-color: $accent-three;
+  transform: rotate(1deg);
+  top: 25px;
+  left: 4px;
 }

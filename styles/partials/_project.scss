@@ -116,12 +116,18 @@
   }
 }
 
-@include respond-at-and-below($break-small) {
+@include respond-at-and-below($break-medium) {
   body.project {
     margin: 80px 4vw 0;
-    .card {
-      padding: 0 40px;
-      grid-template-columns: 1fr;
+    .section-projects {
+      padding: 0 8vw;
+      .card {
+        grid-template-columns: 1fr;
+      }
+    }
+    section.back {
+      margin-left: 8vw;
+      margin-bottom: 60px;
     }
   }
 }
