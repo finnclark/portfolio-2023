@@ -55,7 +55,7 @@
 body {
   background: white;
   color: #540d6e;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @media (min-width: 0vw) {
