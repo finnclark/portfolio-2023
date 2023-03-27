@@ -62,9 +62,9 @@ body {
     height: auto;
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 60% auto;
-        grid-template-columns: 60% auto;
-    grid-column-gap: 2vw;
+    -ms-grid-columns: 57% auto;
+        grid-template-columns: 57% auto;
+    grid-column-gap: 6vw;
   }
   body.main header {
     margin-bottom: 200px;
@@ -72,20 +72,12 @@ body {
   body.main section {
     margin-bottom: 160px;
   }
-  body.main .primary-container {
-    width: 44vw;
-    margin: 0 6vw 0 0;
-  }
-  body.main .supplementary-container {
-    width: 30vw;
-  }
   body.main .supplementary-container .profile {
-    height: 40vw;
-    min-width: auto;
-    margin-top: 120px;
+    height: auto;
+    width: calc(100% - 24px);
     position: -webkit-sticky;
     position: sticky;
-    top: 40px;
+    top: 60px;
     border: 12px solid #9bb1ff;
     border-radius: 48px;
   }
