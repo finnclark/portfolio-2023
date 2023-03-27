@@ -123,6 +123,12 @@ body {
     }
   }
 }
+@media only screen and (min-resolution: 193dpi) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
 
 hr {
   border: none;

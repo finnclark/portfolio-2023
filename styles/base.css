@@ -171,6 +171,13 @@ body {
   }
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2.0104166666666665), only screen and (min-resolution: 193dpi) {
+  html,
+  body {
+    font-size: 20px;
+  }
+}
+
 hr {
   border: none;
   height: 40px;
