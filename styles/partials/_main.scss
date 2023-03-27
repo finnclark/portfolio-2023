@@ -1,6 +1,7 @@
 body {
   background: $bg-primary;
   color: $text-primary;
+  overflow: hidden;
 }
 
 @include respond-at-and-above(0vw) {
