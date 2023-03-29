@@ -412,8 +412,8 @@ hr.hr-three {
     padding: 1vw 6vw 2vw;
   }
   body.project img {
-    width: calc(100% + 8vw);
-    margin: 40px -4vw 20px;
+    width: calc(100% + 16vw);
+    margin: 40px -8vw 20px;
     border: 2px solid #eca400;
     border-radius: 12px;
   }
