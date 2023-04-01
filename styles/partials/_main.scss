@@ -1,7 +1,6 @@
 body {
   background: $bg-primary;
   color: $text-primary;
-  overflow-x: hidden;
 }
 
 @include respond-at-and-above(0vw) {
@@ -11,6 +10,7 @@ body {
     height: auto;
     display: grid;
     grid-template-columns: 57% auto;
+    overflow-x: hidden;
 
     grid-column-gap: 6vw;
 
@@ -63,7 +63,7 @@ body {
         .card-link {
           text-decoration: none;
           img {
-            width: 100%;
+            width: calc(100% - 4px);
             border-radius: 8px;
             border: 2px solid $accent-three-light;
           }

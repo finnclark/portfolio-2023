@@ -55,7 +55,6 @@
 body {
   background: white;
   color: #540d6e;
-  overflow-x: hidden;
 }
 
 @media (min-width: 0vw) {
@@ -67,6 +66,7 @@ body {
     display: grid;
     -ms-grid-columns: 57% auto;
         grid-template-columns: 57% auto;
+    overflow-x: hidden;
     grid-column-gap: 6vw;
   }
   body.main header {
@@ -115,7 +115,7 @@ body {
     text-decoration: none;
   }
   .section-projects .card-container .card .card-link img {
-    width: 100%;
+    width: calc(100% - 4px);
     border-radius: 8px;
     border: 2px solid #fbedcc;
   }
@@ -359,6 +359,7 @@ hr.hr-three {
             flex-direction: row;
     background: white;
     color: #540d6e;
+    overflow-x: hidden;
   }
   body.project h3 {
     margin-top: 40px;
@@ -453,7 +454,7 @@ hr.hr-three {
     padding: 12px;
   }
   body.project .section-projects .card-container .card-link img {
-    width: 100%;
+    width: calc(100% - 4px);
     margin: 0;
     border-radius: 8px;
     border: 2px solid #fbedcc;
