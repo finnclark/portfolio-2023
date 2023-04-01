@@ -66,6 +66,7 @@ body {
     display: grid;
     -ms-grid-columns: 57% auto;
         grid-template-columns: 57% auto;
+    position: relative;
     overflow-x: hidden;
     grid-column-gap: 6vw;
   }
@@ -359,6 +360,7 @@ hr.hr-three {
             flex-direction: row;
     background: white;
     color: #540d6e;
+    position: relative;
     overflow-x: hidden;
   }
   body.project h3 {
