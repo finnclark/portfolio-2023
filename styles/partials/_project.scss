@@ -51,10 +51,17 @@
       padding: 1vw 6vw 2vw;
     }
 
+    section.components,
+    section.fundamentals {
+      img {
+        border: none;
+      }
+    }
+
     img {
       width: calc(100% + 16vw);
       margin: 40px -8vw 20px;
-      border: 2px solid $accent-three;
+      border: 2px solid $accent-two-light;
       border-radius: 12px;
     }
 
@@ -80,34 +87,34 @@
     }
 
     .section-projects {
-      padding: 0vw;
+      padding: 0;
       .card-container {
         padding-top: 20px;
         display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 4vw;
+        width: auto;
+        position: relative;
         z-index: 1;
-        .card {
-          text-decoration: none;
-          display: grid;
 
+        .card-link {
+          text-decoration: none;
           .card-text {
-            padding: 0px;
+            padding: 12px;
           }
 
           img {
-            transition: all 0.1s ease-in-out;
+            width: 100%;
             margin: 0;
-            border: 12px solid $accent-three-light;
-            border-radius: 48px;
+            border-radius: 8px;
+            border: 2px solid $accent-three-light;
           }
           &:hover {
             h3 {
               text-decoration: none;
             }
             img {
-              border: 12px solid $accent-three;
-              border-radius: 72px;
+              border: 2px solid $accent-two;
             }
           }
         }
@@ -116,27 +123,27 @@
   }
 }
 
+@include respond-at-and-below($break-large) {
+  body.project {
+    margin: 80px 12vw 0;
+  }
+}
+
 @include respond-at-and-below($break-medium) {
   body.project {
     margin: 80px 4vw 0;
     .section-projects {
       padding: 0 8vw;
-      .card {
+      .card-container {
         grid-template-columns: 1fr;
+        .card {
+          margin-bottom: 40px;
+        }
       }
     }
     section.back {
       margin-left: 8vw;
       margin-bottom: 60px;
-    }
-  }
-}
-
-@include respond-at-and-above($break-small) {
-  body.project {
-    .card {
-      grid-template-columns: 55% auto;
-      grid-gap: 4vw;
     }
   }
 }

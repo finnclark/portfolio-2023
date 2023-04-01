@@ -1,0 +1,150 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>Finn Clark | XUI design system</title>
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-54PBDSVS7L"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-54PBDSVS7L');
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <body class="project">
+    <div class="project-container">
+      <section class="back">
+        <a href="index.html" title="Navigate to landing page" class="link-home">
+          <img src="assets/images/back.svg">
+          <h3>Home</h3>
+        </a>
+      </section>
+      
+      <section class="heading blob-one-accent-two blob-left-one">
+        <h1 class="title">XUI design system</h1>
+        <h2>Xero’s product design system consisting of fundamentals, components, patterns, and guidance.</h2>
+        <!-- <img src="assets/images/et-header.png" style="border: none;"> -->
+      </section>
+
+      <section class="summary">
+        <h3>In a nutshell</h3>
+        <p>XUI (Xero User Interface) as a design system helps product teams at Xero design and build interfaces quickly and consistently to help create beautiful, high-quality, cohesive experiences. XUI is made up of multiple parts:
+          <ul>
+            <li>Fundamental elements (e.g. colors and icons)</li>
+            <li>Functional React components</li>
+            <li>Documented pattern and usage guidance</li>
+            <li>Dedicated support from a specialised team</li>
+          </ul>
+          <p>For over 5 years, I've played a critical role in growing and maintaining XUI, as well as supported teams in adopting, using, and contributing to the design system.</p>
+      </section>
+
+      <section class="fundamentals">
+        <h2 class="text-shape shape-three">Fundamental elements</h2>
+        <p>XUI's fundamentals define the Xero product visual language and are a foundation for building up other user interface components, patterns, and pages. The fundamentals include (but are not limited to) layout and spacing, typography, colours, and icons.</p>
+        <p>I am going to highlight 3 areas of the XUI fundamentals which I helped evolve into more mature pieces of the design system.</p>
+        <hr class="hr-three">
+
+        <h3>Redesigned size and spacing system</h3>
+        <p>I helped develop and migrate XUI from a dated sizing and spacing model (increments of 5px) to a scalable and systematic model (multiples of 4px).</p>
+        <p>This work involved completely redesigning components and layout structures, and introduced a brand new method to nest components systematically within each other using multiple size variants.</p>
+        <img src="assets/images/xui-spacing.png">
+
+        <h3>Colour contrast enhancements</h3>
+        <p>As part of an ongoing effort to improve the accessibility of XUI, an early project was to overhaul the entire colour system, ensuring the passing of <a href="https://www.w3.org/TR/WCAG21/">WCAG</a> success criteria.</p>
+        <p>This process invloved reviewing colour decisions, identifying areas of improvement, and implementing the changes into the design system.</p>
+        <img src="assets/images/xui-colours.png">
+        <!-- <img src="assets/images/xui-colours-2.png"> -->
+
+        <h3>New icons</h3>
+        <p>I've designed and introduced many icons throughout my time in XUI, as well as written guidance and supported other designers in contributing their own icons into the design system.</p>
+        <img src="assets/images/xui-icons.png">
+      </section>
+
+      <section class="components">
+        <h2 class="text-shape shape-one">Components</h2>
+        <p>XUI provides a number of React components that help product teams create cohesive experiences at speed. Components in XUI are designed to work for a multitude of scenarios and have to be fully accessible, responsive, and localisable.</p>
+        <p>Over my time at Xero, I've had the opportunity to design many components of various complexity. I'll outline a few below.</p>
+        <hr class="hr-one">
+
+        <h3>File uploader</h3>
+        <p>The file uploader component facilitates users uploading files into the product. Uploaded files are displayed in a summarised list below the upload input.</p>
+        <p>Designing this component involved a lot of desk research into existing design system solutions as well as a refinement in visual and functional treatment to solve for Xero-specific problems.</p>
+        <img src="assets/images/xui-file-uploader.png">
+
+        <h3>Editable table</h3>
+        <p>The editable table component is a complex component used to house interactive and static data in a way that's easy for users to scan, organise, and manipulate in order to complete tasks efficiently.</p>
+        <p>Check out the <a href="editable-table.html" title="Navigate to editable table component project page">detailed design process for editable table</a>.</p>
+        <img src="assets/images/xui-editable-table.png">
+
+        <h3>Empty state</h3>
+        <p>The empty state component provides a consistent experience for when there’s no data to display where there should be, used to be, or will eventually be.</p>
+        <p>Empty states are a common design pattern which benefitted from a considered component to aid in surfacing more predictable experiences to users. Designing this component involved understanding what existed within Xero already and producing a considered API to solve for these use-cases.</p>
+        <img src="assets/images/xui-empty-state.png">
+      </section>
+
+      <section>
+        <h2 class="text-shape shape-two">Pattern guidance</h2>
+        <p>Pattern guidance documentation supports designers and engineers in making responsible experience decisions within their products. It's used to help people choose the right components in various circumstances or to give broader context to using the design system.</p>
+        <p>I've been able to write the following pattern guidance for XUI by researching industry best practices as well other design systems' documentation to create a base narrative and have then integrated specific Xero context to ensure the content is relateable and useful for product teams.</p>
+        <hr class="hr-two">
+        
+        <h3 class="blob-three-accent-two blob-right-two">Localisation</h3>
+        <p>The localisation pattern guidance provides tips and techniques to best consider and provide a localised experience in product experiences.</p>
+        <p>Localisation is all about ensuring a product works no matter where in the world it's used, or what language it's show in. The pattern guidance covers content topics such as text length affordance, labelling, date and time, addresses, and collation, as well other topics like the use of metaphors and idioms, icons, and illustrations.</p>
+        <img src="assets/images/xui-localisation.png">
+
+        <h3>Onboarding</h3>
+        <p>The onboarding pattern guidance is used to support decisions being made in products to introduce new experiences or reiterate existing ones. It's centred around 5 principles for effective onboarding:
+          <ol>
+            <li>Provide a clear path to success</li>
+            <li>Show benefits early and often</li>
+            <li>Create an integrated experience</li>
+            <li>Minimise friction and expose complexity over time</li>
+            <li>Never stop onboarding</li>
+          </ol>
+        </p>
+        <p>To help teams create unified experiences, the guidance points to specific components that can be used in various scenarios to help onboard users to products and features.</p>
+        <img src="assets/images/xui-onboarding.png">
+      </section>
+
+      <section class="blob-one-accent-two blob-right-one">
+        <h2 class="text-shape shape-one">Support</h2>
+        <p>The XUI team offers dedicated support to teams who need help understanding, using or implementing the design system.</p>
+        <p>Through my time at Xero I've provided a range of support; from onboarding sessions, one-on-one calls, Slack channel support, as well as options for more embedded project help. Embedded support is most common when there's a team wanting help contributing to the desgin system, often through <a href="xui-labs.html">XUI Labs</a>.</p>
+      </section>
+
+      <section class="section-projects">
+        <h2 class="text-shape shape-three">Other projects</h2>
+        <nav class="card-container">
+          <div class="card">
+            <a class="card-link" href="editable-table.html" title="Navigate to editable table component project page">
+              <img src="assets/images/card-small-editable-table.png" alt="An image showing a close up of an editable table component design as well as a Xero logo in the corner">
+              <div class="card-text">
+                <h3>Editable table component</h3>
+                <p>Versatile design system component used to simplify the display and manipulation of complex data sets.</p>
+              </div>
+            </a>
+          </div>
+          <div class="card">
+            <a class="card-link" href="xui-labs.html" title="Navigate to XUI Labs project page"><img src="assets/images/card-small-xui-labs.png" alt="An image showing visual examples of contributed XUI Labs components with multiplayer Figma cursors to indicate collaboration as well as a Xero logo in the corner">
+              <div class="card-text">
+                <h3>XUI Labs</h3>
+                <p>A collaborative space for easily creating and sharing new components that solve common problems.</p>
+              </div>
+            </a>
+          </div>
+        </nav>
+      </section>
+
+      <section>
+        <h2 class="text-shape shape-one">Find me online</h2>
+        <p>Contact me via <a href="" title="Navigate to Finn Clark's LinkedIn profile">LinkedIn</a> or <a href="mailto:finnclark.co@gmail.com" title="New email message directed to finnclark.co@gmail.com">email</a>.</p>
+      </section>
+    </div>
+  </body>
+</html>
