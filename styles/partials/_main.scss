@@ -3,6 +3,17 @@ body {
   color: $text-primary;
 }
 
+.link-button {
+  padding: 8px 12px;
+  border: 2px solid transparent;
+  background-color: $accent-one-light;
+  text-decoration: none;
+  border-radius: 40px;
+  &:hover {
+    border-color: $accent-one;
+  }
+}
+
 @include respond-at-and-above(0vw) {
   body.main {
     margin: 80px 10vw 0;
@@ -12,11 +23,17 @@ body {
     grid-template-columns: 57% auto;
     position: relative;
     overflow-x: hidden;
-
     grid-column-gap: 6vw;
 
     header {
       margin-bottom: 200px;
+
+      h2 {
+        margin-bottom: 48px;
+      }
+      .link-button {
+        margin-right: 12px;
+      }
     }
 
     section {
@@ -32,9 +49,9 @@ body {
     .supplementary-container {
       padding: 20px;
       .profile {
-        padding: 20px;
+        padding: 2px;
         height: auto;
-        width: calc(100% - 64px);
+        width: calc(100% - 28px);
         position: sticky;
         top: 60px;
         border: 12px solid $accent-two;
@@ -57,22 +74,30 @@ body {
       padding-top: 80px;
       display: grid;
       grid-template-columns: 1fr 1fr 1fr;
-      grid-column-gap: 4vw;
+      grid-column-gap: 3vw;
       width: 80vw;
       position: relative;
       .card {
         .card-link {
           text-decoration: none;
           img {
+            transition: all 0.1s ease-in-out;
             width: calc(100% - 4px);
-            border-radius: 8px;
             border: 2px solid $accent-three-light;
+            border-bottom: 1px solid $grey;
+            border-radius: 12px 12px 0 0;
           }
           .card-text {
-            padding: 12px;
+            transition: all 0.1s ease-in-out;
+            padding: 12px 24px;
+            border: 2px solid $accent-three-light;
+            border-radius: 0 0 12px 12px;
+            border-top: none;
+            p {
+              font-size: $fs-xs;
+            }
             h3 {
-              text-decoration: underline;
-              font-size: $fs-xl;
+              font-size: $fs-l;
               margin-block-start: 0;
               padding-top: 1em;
             }
@@ -83,6 +108,10 @@ body {
             }
             img {
               border: 2px solid $accent-two;
+              border-bottom: 1px solid $grey;
+            }
+            .card-text {
+              border-color: $accent-two;
             }
           }
         }
@@ -103,7 +132,7 @@ body {
     .section-projects {
       .card-container {
         padding-top: 40px;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         row-gap: 80px;
         .card-text {
           padding: 12px 8px 0;
@@ -119,8 +148,15 @@ body {
   body.main {
     grid-template-columns: 1fr;
     grid-column-gap: 0;
+
     .supplementary-container {
       display: none;
+    }
+
+    .section-projects {
+      .card-container {
+        grid-template-columns: 1fr;
+      }
     }
 
     section,

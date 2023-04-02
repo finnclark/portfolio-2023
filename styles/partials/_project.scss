@@ -20,27 +20,27 @@
     }
     section.back {
       padding: 0;
-      a {
-        text-decoration: none;
-        &:hover {
-          img {
-            transform: scale(1.2);
-          }
-        }
-      }
       .link-home {
+        text-decoration: none;
         display: flex;
         align-items: center;
         width: fit-content;
+        padding: 4px 16px 4px 8px;
+        background-color: $accent-two-light;
+        border: 2px solid transparent;
+        border-radius: 40px;
         img {
           margin: 0;
           border: none;
           width: auto;
+          transform: scale(0.5);
           transition: all 0.1s ease-in-out;
         }
         h3 {
           margin: 0;
-          padding-left: 20px;
+        }
+        &:hover {
+          border-color: $accent-two;
         }
       }
     }
@@ -100,24 +100,9 @@
         z-index: 1;
 
         .card-link {
-          text-decoration: none;
-          .card-text {
-            padding: 12px;
-          }
-
           img {
             width: calc(100% - 4px);
             margin: 0;
-            border-radius: 8px;
-            border: 2px solid $accent-three-light;
-          }
-          &:hover {
-            h3 {
-              text-decoration: none;
-            }
-            img {
-              border: 2px solid $accent-two;
-            }
           }
         }
       }
@@ -134,18 +119,22 @@
 @include respond-at-and-below($break-medium) {
   body.project {
     margin: 80px 4vw 0;
-    .section-projects {
-      padding: 0 8vw;
-      .card-container {
-        grid-template-columns: 1fr;
-        .card {
-          margin-bottom: 40px;
-        }
-      }
-    }
+
     section.back {
       margin-left: 8vw;
       margin-bottom: 60px;
+    }
+  }
+}
+
+@include respond-at-and-below($break-small) {
+  .section-projects {
+    padding: 0 8vw;
+    .card-container {
+      grid-template-columns: 1fr !important;
+      .card {
+        margin-bottom: 40px;
+      }
     }
   }
 }

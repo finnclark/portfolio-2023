@@ -20,7 +20,7 @@ $semi-bold: 600;
 $bold: 700;
 $black: 900;
 
-$fs-xs: 0.8em;
+$fs-xs: 0.95em;
 $fs-s: 1.05em;
 $fs-m: 1.1em;
 $fs-l: 1.2em;
@@ -35,7 +35,7 @@ $bg-accent: #fbeadb;
 
 $text-primary: #540d6e;
 $text-accent: #3b28cc;
-$text-secondary: #4b5464;
+$text-secondary: mix($text-primary, white, 40%);
 
 $accent-one: #ffd500;
 $accent-two: #9bb1ff;
