@@ -199,6 +199,9 @@ body {
   body.main .supplementary-container {
     display: none;
   }
+  body.main .section-projects {
+    padding: 0;
+  }
   body.main .section-projects .card-container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
