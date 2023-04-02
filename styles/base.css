@@ -333,8 +333,6 @@ hr.hr-three {
     width: auto;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    -webkit-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
   }
   body.project section.back .link-home h3 {
     margin: 0;
